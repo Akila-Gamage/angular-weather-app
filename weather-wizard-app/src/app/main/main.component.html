@@ -1,0 +1,28 @@
+<header>
+    <div id="app-logo">
+      <p><span>weather</span>Wizard</p>
+    </div>
+    <div id="search-bar-container">
+      <app-search (weatherData)="receiveWeatherData($event)"></app-search>
+    </div>
+  </header> 
+  <main>
+    <div class="main-card">
+      <div class="general-info">
+        <div class="city-name-container">
+          <h1 class="city-name"><app-city-name [name]="weatherData?.Location"></app-city-name></h1>
+        </div>
+        <div class="weather-data-container">
+          <h3>{{ weatherType }}</h3>
+        </div>
+        <div class="weather-icon-container">
+          <img src="../assets/images/icons8-summer.gif" alt="">
+        </div>  
+      </div>
+      <div class="weather-info">
+        <app-temperature [temperature]="weatherData?.Temperature"></app-temperature>
+        <app-humidity [humidity]="weatherData?.Humidity"></app-humidity>
+        <app-pressure [pressure]="weatherData?.Pressure"></app-pressure>
+      </div>
+    </div>
+  </main>
