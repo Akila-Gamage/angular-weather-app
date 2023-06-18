@@ -1,0 +1,87 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header > div {
+    width: 100px;
+    /* margin: 10px; */
+}
+#app-logo{
+    width: 600px;
+    position: relative;
+}
+
+#app-logo p{
+    font-size: 30px;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+#app-logo p span{
+    color: black;
+}
+
+#search-bar-container{
+    width: 600px;
+    align-items: end;  
+    position: relative;  
+}
+
+.main-card{
+    font-family: 'Cabin', sans-serif;
+    background-color: white;
+    padding: 5rem;
+    border-radius: 2rem;
+    margin: 0rem 5rem 5rem 5rem;
+    transition: .4s;
+    box-shadow: 0 0px 15px hsla(228,66%, 45%, .5);
+}
+
+.general-info{
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    background: transparent;
+    /* background-color: white; */
+    padding: 2.5rem;
+    border-radius: 1rem;
+    /* margin: 5rem 0 5rem 0; */
+    transition: .4s;
+    /* box-shadow: 0 0px 15px hsla(228,66%, 45%, .5); */
+    align-items: center;
+}
+
+.city-name-container{
+    width: 50%;
+    align-items: start;
+}
+.weather-data-container{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+
+.weather-icon-container{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.weather-icon-container img{
+    width: 150px;
+    height: 150px;
+    
+}
+
+.city-name{ 
+    margin: 0px 0px 0px 40px;
+    font-size: 80px
+}
+
+.weather-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
