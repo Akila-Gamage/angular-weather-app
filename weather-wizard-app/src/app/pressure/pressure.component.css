@@ -1,0 +1,40 @@
+.pressure-card{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(white,#73cdfa);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    margin: 1rem 0 1rem 0;
+    transition: .4s;
+    /* box-shadow: 0 1px 15px hsla(228,66%, 45%, 0.5); */
+}
+
+.icon{
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.icon img{
+    width: 95px;
+    height: 100px;
+}
+.type{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type h4{
+    font-size: 25px;
+}
+
+.info{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info h2{
+    font-size: 40px;
+}
