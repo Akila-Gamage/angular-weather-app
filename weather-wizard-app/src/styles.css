@@ -1,0 +1,9 @@
+body {
+    /* background-image: linear-gradient(#477bff,#081e54); */
+    /* background-color: black; */
+    background-image: url("../src/assets/images/background-15.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
