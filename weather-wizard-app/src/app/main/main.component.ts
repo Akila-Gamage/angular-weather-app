@@ -1,6 +1,4 @@
 import { Component, Input} from '@angular/core';
-import { TemperatureComponent } from '../temperature/temperature.component';
-
 
 @Component({
   selector: 'app-main',
@@ -16,5 +14,4 @@ export class MainComponent {
     this.weatherData = data;
   }
 
-  @Input() weatherType: any;
 }
