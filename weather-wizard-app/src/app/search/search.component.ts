@@ -1,8 +1,5 @@
 import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 import { WeatherApiService } from '../weather-api.service';
-import { TemperatureComponent } from '../temperature/temperature.component';
-import { HumidityComponent } from '../humidity/humidity.component';
-import { PressureComponent } from '../pressure/pressure.component';
 
 @Component({
   selector: 'app-search',
