@@ -11,6 +11,7 @@ import { HumidityComponent } from './humidity/humidity.component';
 import { PressureComponent } from './pressure/pressure.component';
 import { MainComponent } from './main/main.component';
 import { CityNameComponent } from './city-name/city-name.component';
+import { WeatherIconComponent } from './weather-icon/weather-icon.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CityNameComponent } from './city-name/city-name.component';
     HumidityComponent,
     PressureComponent,
     MainComponent,
-    CityNameComponent
+    CityNameComponent,
+    WeatherIconComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { CityNameComponent } from './city-name/city-name.component';
     SearchComponent,
     TemperatureComponent,
     HumidityComponent,
-    PressureComponent,],
+    PressureComponent,
+    WeatherIconComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
