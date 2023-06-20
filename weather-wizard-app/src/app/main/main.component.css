@@ -20,7 +20,7 @@ header > div {
 }
 
 #app-logo p span{
-    color: black;
+    color: #7c22e3;
 }
 
 #search-bar-container{
@@ -30,16 +30,18 @@ header > div {
 }
 
 .main-card{
+    opacity: 0.8;
     font-family: 'Cabin', sans-serif;
     background-color: white;
     padding: 5rem;
     border-radius: 2rem;
     margin: 0rem 5rem 5rem 5rem;
     transition: .4s;
-    box-shadow: 0 0px 15px hsla(228,66%, 45%, .5);
+    background-image: linear-gradient(#411d61,#5240f5,black);
 }
 
 .general-info{
+    color: white;
     display: flex;
     justify-content: center;
     height: 140px;
@@ -54,30 +56,55 @@ header > div {
 }
 
 .city-name-container{
-    width: 50%;
-    align-items: start;
-}
-.weather-data-container{
     width: 30%;
+    align-items: center;
+}
+.coordinates-container{
+    width: 20%;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.coordinates-container h3{
+    margin: 0%;
+}
+
+.coordinates-container h5{
+    margin: 5% 0 0 0;
 }
 
 .weather-icon-container{
     display: flex;
-    width: 20%;
+    flex-direction: column;
+    width: 15%;
     justify-content: center;
+    align-items: center;
+    border-radius: 100%;
 }
-
-.weather-icon-container img{
-    width: 150px;
-    height: 150px;
-    
+.weather-icon-container h5{
+    margin: 0 0 15% 0;
 }
 
 .city-name{ 
     margin: 0px 0px 0px 40px;
     font-size: 80px
+}
+
+.wind-details-container{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wind-details-container h3{
+    padding-left: 40%;
+    margin: 0%;
+}
+
+.wind-details-container h5{
+    padding-left: 40%;
+    margin: 2% 0 0 0;
 }
 
 .weather-info{
