@@ -9,15 +9,24 @@
   <main>
     <div class="main-card">
       <div class="general-info">
+        <div class="coordinates-container">
+          <h3>Coordinates : </h3>
+          <h5>Longitude&nbsp;&nbsp;:&nbsp;{{ weatherData?.Longitude }} &deg;</h5>
+          <h5>Latitude&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;{{ weatherData?.Latitude }} &deg;</h5>
+        </div>
         <div class="city-name-container">
           <h1 class="city-name"><app-city-name [name]="weatherData?.Location"></app-city-name></h1>
         </div>
-        <div class="weather-data-container">
-          <h3>{{ weatherType }}</h3>
-        </div>
         <div class="weather-icon-container">
-          <img src="../assets/images/icons8-summer.gif" alt="">
+          <app-weather-icon [iconUrl]="weatherData?.WeatherIcon"></app-weather-icon>
+          <h5>{{ weatherData?.WeatherDescription }}</h5>
         </div>  
+        <div class="wind-details-container">
+          <h3>Wind :</h3>
+          <h5>Speed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;{{ weatherData?.WindSpeed }}</h5>
+          <h5>Direction&nbsp;&nbsp;:&nbsp;{{ weatherData?.WindDeg }}</h5>
+          <h5>gust&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;{{ weatherData?.WindGust }}</h5>
+        </div>
       </div>
       <div class="weather-info">
         <app-temperature [temperature]="weatherData?.Temperature"></app-temperature>
